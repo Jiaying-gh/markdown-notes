@@ -29,8 +29,8 @@
       ##### Header 5
       ###### Header 6
 
-## Link  
-### Inline link  
+## Links  
+### Inline links  
 
 Inline links attach the links right after the link text in the Markdown file.  
 Put a pair of square brackets "[]" around the link text and a pair of parenthesis "()" around the link.   
@@ -41,7 +41,7 @@ Do not place a space between the link text and the link, otherwise the square br
 !!!example Example
     I will get a good job on [LinkIn](https://www.linkedin.com/).  
 
-### Reference link  
+### Reference links  
 Reference links allow you to put links at the end of the Markdown file so as to manage them in a unified way.  
 The link is actually a reference to another place in the file.  
 
@@ -55,8 +55,8 @@ Put a pair of square brackets around the link text and reference text. At the en
 > [!Note]
 > Both types of links are rendered the same way.
 
-## Image  
-### Inline image
+## Images  
+### Inline images
 Put an exclamation mark "!" before the alt  text, and follow the alt text with the link in a pair of parenthesis.  
 
 > [!Note] Why we need alx text
@@ -70,7 +70,7 @@ Put an exclamation mark "!" before the alt  text, and follow the alt text with t
 
 ![a tree](https://www.bing.com/images/search?view=detailV2&ccid=zaltdJrk&id=593B06C3D6868D35297494C3CAD315970D67A85A&thid=OIP.zaltdJrkPdMPHulBBhkitwHaFj&mediaurl=https%3A%2F%2Fcdn.britannica.com%2F95%2F156695-131-FF89C9FA%2Foak-tree.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.cda96d749ae43dd30f1ee941061922b7%3Frik%3DWqhnDZcV08rDlA%26pid%3DImgRaw%26r%3D0&exph=675&expw=900&q=tree&FORM=IRPRST&ck=FD7AEF948C89334357AC8C5C86D15BB3&selectedIndex=3&itb=1&cw=1343&ch=781&ajaxhist=0&ajaxserp=0)
 
-### Reference image
+### Reference images
 1. Put an exclamation mark "!" before the link  text.
 2. Put a pair of square brackets around the link text and reference text.
 3. At the end of the file, copy and paste the reference text with brackets, and then follow the right bracket with a colon and the link.
@@ -82,7 +82,7 @@ Put an exclamation mark "!" before the alt  text, and follow the alt text with t
     ![example tree][a tree]  
     [a tree]: https://www.bing.com/images/search?view=detailV2&ccid=zaltdJrk&id=593B06C3D6868D35297494C3CAD315970D67A85A&thid=OIP.zaltdJrkPdMPHulBBhkitwHaFj&mediaurl=https%3A%2F%2Fcdn.britannica.com%2F95%2F156695-131-FF89C9FA%2Foak-tree.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.cda96d749ae43dd30f1ee941061922b7%3Frik%3DWqhnDZcV08rDlA%26pid%3DImgRaw%26r%3D0&exph=675&expw=900&q=tree&FORM=IRPRST&ck=FD7AEF948C89334357AC8C5C86D15BB3&selectedIndex=3&itb=1&cw=1343&ch=781&ajaxhist=0&ajaxserp=0
 
-## Block quote
+## Block quotes
 Put a greater than ">" caret before the quote.  
 This is to indicate that the content is from somewhere else.
 After rendering, it will be dented and has a colored line at the left of the content.
@@ -96,15 +96,15 @@ To quote multiple paragraphs in a single block quote, place > before each paragr
 
 To end a quote block, leave a blank line after it.
 
-## Line break  
-### Hard break  
+## Line breaks  
+### Hard breaks  
 Press Enter, and put a space before the new line. 
 
-### Soft break  
+### Soft breaks  
  Put two spaces after the previous line, and then press Enter.  
 
-## List
-### Unordered list
+## Lists
+### Unordered lists
 Place a asterisk "*" before each item.  
 
 !!! example Example
@@ -120,14 +120,14 @@ To insert a lower-level list, indent one asterisk more before the preceding item
       * Apple
       * Blueberry
 
-### Ordered list
+### Ordered lists
 Place the number before the step.
 
 !!! example Example
     1. Write markdown files.
     2. Upload file to Github.  
 
-### List text
+### List texts
 Start a new line, and then indent the line by at least one space.
 
 !!! example Example
