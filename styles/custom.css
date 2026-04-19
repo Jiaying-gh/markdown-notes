@@ -1,0 +1,30 @@
+/* styles/custom.css */
+
+/* Example 提示框样式 - 与 GitHub Alerts 风格统一 */
+.markdown-alert-example {
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    color: inherit;
+    border-left: 0.25em solid #2c9e5e; /* 绿色的左侧边框 */
+    background-color: #f0f9f4;          /* 浅绿色背景 */
+}
+
+/* 暗色主题适配 */
+@media (prefers-color-scheme: dark) {
+    .markdown-alert-example {
+        background-color: #1a2e24;      /* 深色模式下的背景 */
+    }
+}
+
+/* 提示框标题样式 */
+.markdown-alert-example .markdown-alert-title {
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+/* 为 Example 添加专属图标 */
+.markdown-alert-example .markdown-alert-title::before {
+    content: "📝";
+    margin-right: 0.5rem;
+}
