@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Basic Syntax - Markdown_作品集</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Markdown_作品集</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../markdow-syntax-advanced/" class="nav-link">Markdow syntax advanced</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Basic Syntax</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../markdow-syntax-advanced/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#basic-syntax" class="nav-link">Basic Syntax</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#italic" class="nav-link">Italic</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#bold" class="nav-link">Bold</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#headers" class="nav-link">Headers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#links" class="nav-link">Links</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#images" class="nav-link">Images</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#block-quotes" class="nav-link">Block quotes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#line-breaks" class="nav-link">Line breaks</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#lists" class="nav-link">Lists</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="basic-syntax">Basic Syntax</h1>
+<h2 id="italic">Italic</h2>
+<p>Put two underlines "_" around the text.  </p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>I_will_get a good job.</p>
+</div>
+<h2 id="bold">Bold</h2>
+<p>Put two asterisks "*" (preferred) or underlines "_" around the text.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>I <strong>will</strong> get a good job.</p>
+</div>
+<blockquote>
+<p>[!Note]
+  If you need to make texts both italic and bold, put two asterisks on the outside to make it more legible.<br />
+  For example, I <strong><em>will</em></strong> get a good job.</p>
+</blockquote>
+<h2 id="headers">Headers</h2>
+<p>Put the same number of hash masks "#" as the size of the header level.<br />
+Six levels are available. </p>
+<p>!!!example Example:
+    # Header 1<br />
+    ## Header 2<br />
+    ### Header 3
+    #### Header 4
+    ##### Header 5
+    ###### Header 6</p>
+<h2 id="links">Links</h2>
+<h3 id="inline-links">Inline links</h3>
+<p>Inline links attach the links right after the link text in the Markdown file.<br />
+Put a pair of square brackets "[]" around the link text and a pair of parenthesis "()" around the link.   </p>
+<blockquote>
+<p>[!Note]
+Do not place a space between the link text and the link, otherwise the square brackets show in the rendered content. </p>
+</blockquote>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>I will get a good job on <a href="https://www.linkedin.com/">LinkIn</a>.  </p>
+</div>
+<h3 id="reference-links">Reference links</h3>
+<p>Reference links allow you to put links at the end of the Markdown file so as to manage them in a unified way.<br />
+The link is actually a reference to another place in the file.  </p>
+<p>Put a pair of square brackets around the link text and reference text. At the end of the file, copy and paste the reference text with brackets, and then follow the right bracket with a colon and the link.  </p>
+<p>!!!example Example:<br />
+    I will get a good job on <a href="https://www.linkedin.com/">LinkIn</a>.</p>
+<blockquote>
+<p>[!Note]
+Both types of links are rendered the same way.</p>
+</blockquote>
+<h2 id="images">Images</h2>
+<h3 id="inline-images">Inline images</h3>
+<p>Put an exclamation mark "!" before the alt  text, and follow the alt text with the link in a pair of parenthesis.  </p>
+<blockquote>
+<p>[!Note] Why we need alx text
+Users may use screen readers.
+Users may have limited network speed to load an image.  </p>
+</blockquote>
+<div class="markdown-alert markdown-alert-example">
+  <p class="markdown-alert-title">Example</p>
+  <p>The following table shows how the image is displayed in markdown.</p>
+</div>
+
+<p><img alt="a tree" src="https://www.bing.com/images/search?view=detailV2&amp;ccid=zaltdJrk&amp;id=593B06C3D6868D35297494C3CAD315970D67A85A&amp;thid=OIP.zaltdJrkPdMPHulBBhkitwHaFj&amp;mediaurl=https%3A%2F%2Fcdn.britannica.com%2F95%2F156695-131-FF89C9FA%2Foak-tree.jpg&amp;cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.cda96d749ae43dd30f1ee941061922b7%3Frik%3DWqhnDZcV08rDlA%26pid%3DImgRaw%26r%3D0&amp;exph=675&amp;expw=900&amp;q=tree&amp;FORM=IRPRST&amp;ck=FD7AEF948C89334357AC8C5C86D15BB3&amp;selectedIndex=3&amp;itb=1&amp;cw=1343&amp;ch=781&amp;ajaxhist=0&amp;ajaxserp=0" /></p>
+<h3 id="reference-images">Reference images</h3>
+<ol>
+<li>Put an exclamation mark "!" before the link  text.</li>
+<li>Put a pair of square brackets around the link text and reference text.</li>
+<li>At the end of the file, copy and paste the reference text with brackets, and then follow the right bracket with a colon and the link.</li>
+</ol>
+<blockquote>
+<p>[!Note]Note<br />
+Do not place a space between the exclamation mark and the left square bracket.</p>
+</blockquote>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p><img alt="example tree" src="https://www.bing.com/images/search?view=detailV2&amp;ccid=zaltdJrk&amp;id=593B06C3D6868D35297494C3CAD315970D67A85A&amp;thid=OIP.zaltdJrkPdMPHulBBhkitwHaFj&amp;mediaurl=https%3A%2F%2Fcdn.britannica.com%2F95%2F156695-131-FF89C9FA%2Foak-tree.jpg&amp;cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.cda96d749ae43dd30f1ee941061922b7%3Frik%3DWqhnDZcV08rDlA%26pid%3DImgRaw%26r%3D0&amp;exph=675&amp;expw=900&amp;q=tree&amp;FORM=IRPRST&amp;ck=FD7AEF948C89334357AC8C5C86D15BB3&amp;selectedIndex=3&amp;itb=1&amp;cw=1343&amp;ch=781&amp;ajaxhist=0&amp;ajaxserp=0" />  </p>
+</div>
+<h2 id="block-quotes">Block quotes</h2>
+<p>Put a greater than "&gt;" caret before the quote.<br />
+This is to indicate that the content is from somewhere else.
+After rendering, it will be dented and has a colored line at the left of the content.
+You can place other markdown elements in a block quote.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>The following sentence is a quote.</p>
+<blockquote>
+<p>The only thing we have to fear is fear itself.  </p>
+</blockquote>
+</div>
+<p>To quote multiple paragraphs in a single block quote, place &gt; before each paragraph, including the blank line.</p>
+<p>To end a quote block, leave a blank line after it.</p>
+<h2 id="line-breaks">Line breaks</h2>
+<h3 id="hard-breaks">Hard breaks</h3>
+<p>Press Enter, and put a space before the new line. </p>
+<h3 id="soft-breaks">Soft breaks</h3>
+<p>Put two spaces after the previous line, and then press Enter.  </p>
+<h2 id="lists">Lists</h2>
+<h3 id="unordered-lists">Unordered lists</h3>
+<p>Place a asterisk "*" before each item.  </p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<ul>
+<li>Sun</li>
+<li>Moon</li>
+<li>Venus</li>
+</ul>
+</div>
+<p>To insert a lower-level list, indent one asterisk more before the preceding item.  </p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<ul>
+<li>Fruit  </li>
+<li>Lemon</li>
+<li>Apple</li>
+<li>Blueberry</li>
+</ul>
+</div>
+<h3 id="ordered-lists">Ordered lists</h3>
+<p>Place the number before the step.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<ol>
+<li>Write markdown files.</li>
+<li>Upload file to Github.  </li>
+</ol>
+</div>
+<h3 id="list-texts">List texts</h3>
+<p>Start a new line, and then indent the line by at least one space.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<ol>
+<li>Upload markdown files to  Github.<br />
+   Make sure the files are closed.</li>
+</ol>
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
