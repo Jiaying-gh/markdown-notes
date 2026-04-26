@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Extended - Markdown_作品集</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../styles/custom.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Markdown_作品集</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../markdown-syntax-basic/" class="nav-link">Basic Syntax</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Extended</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../markdown-syntax-basic/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#extended" class="nav-link">Extended</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#tables" class="nav-link">Tables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#fenced-code-blocks" class="nav-link">Fenced Code Blocks</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#syntax-highlighting" class="nav-link">Syntax Highlighting</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#footnotes" class="nav-link">Footnotes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#heading-ids" class="nav-link">Heading IDs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#definition-list" class="nav-link">Definition List</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#strikethrough" class="nav-link">Strikethrough</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#task-list" class="nav-link">Task List</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#emoji" class="nav-link">Emoji</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#word-highlighting" class="nav-link">Word Highlighting</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#subscript" class="nav-link">Subscript</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#superscript" class="nav-link">Superscript</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="extended">Extended</h1>
+<h2 id="tables">Tables</h2>
+<h3 id="create-tables">Create Tables</h3>
+<p>Use three hyphens or more to create the table head and use pipes to create a column.</p>
+<p>The following table shows the rendered output.</p>
+<table>
+<thead>
+<tr>
+<th>Trees</th>
+<th>Growth Cycle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oak</td>
+<td>Annual</td>
+</tr>
+<tr>
+<td>Lemon</td>
+<td>Semi-annual</td>
+</tr>
+</tbody>
+</table>
+<h3 id="align-columns">Align Columns</h3>
+<p>To align columns to the left, right, or center, add the colon ":" to the left, right, or on both sides of the hyphen.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Trees</th>
+<th style="text-align: center;">Growth Cycle</th>
+<th style="text-align: right;">Leaf Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Oak</td>
+<td style="text-align: center;">Annual</td>
+<td style="text-align: right;">Large</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lemon</td>
+<td style="text-align: center;">Semi-annual</td>
+<td style="text-align: right;">Small</td>
+</tr>
+</tbody>
+</table>
+<h3 id="add-other-elements-in-a-table">Add Other Elements in a Table</h3>
+<p>You can add code, links, and emphasis.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Trees</th>
+<th style="text-align: center;">Growth Cycle</th>
+<th style="text-align: right;">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Oak</td>
+<td style="text-align: center;">Annual</td>
+<td style="text-align: right;"><code>This is an exaple code block</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Lemon</td>
+<td style="text-align: center;">Semi-annual</td>
+<td style="text-align: right;"><a href="https://uscitrusnursery.com/cdn/shop/articles/lemon-tree_1c2bd620-e725-4c4b-afec-d6cb651a6f4c.jpg?v=1765117676">lemon tree</a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip tip">
+<p class="admonition-title">Tip</p>
+<p>To create tables quickly and with GUI, try <a href="(https://www.tablesgenerator.com/markdown_tables#)">Markdown Tables Generator</a>.</p>
+</div>
+<div class="admonition note note">
+<p class="admonition-title">Note</p>
+<p>Separate a table with the previous content by at least a blank line, otherwise the table cannot be rendered as a table.</p>
+</div>
+<h2 id="fenced-code-blocks">Fenced Code Blocks</h2>
+<p>Put three backticks before and after the code block.</p>
+<pre><code>{
+    &quot;name&quot;: &quot;jiaying&quot;,
+    &quot;job&quot;: &quot;technical writer&quot;,
+    &quot;email&quot;: &quot;sisuzanel@163.com&quot;
+}
+</code></pre>
+<h2 id="syntax-highlighting">Syntax Highlighting</h2>
+<p>This allows elements in fenced blocks to be rendered in colors for highlighting.</p>
+<p>Specify the language after the starting three backticks.</p>
+<pre><code class="language-json">{
+    &quot;name&quot;: &quot;jiaying&quot;,
+    &quot;job&quot;: &quot;technical writer&quot;,
+    &quot;email&quot;: &quot;sisuzanel@163.com&quot;
+}
+</code></pre>
+<h2 id="footnotes">Footnotes</h2>
+<p>To add a footnote reference, add a caret and an identifier inside a pair of brackets.
+To add the footnote,  use another caret and number inside brackets with a colon and text.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>This line has a footnote.[^1]</p>
+</div>
+<h2 id="heading-ids">Heading IDs</h2>
+<p>Enclose the custom ID in curly braces on the same line as the heading. </p>
+<div class="admonition note note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Do not put spaces in heading IDs.</li>
+<li>To use heading IDs in MkDocs, use the  foliantcontrib.customids plug-in first.</li>
+</ul>
+</div>
+<h3 id="link-to-heading-ids">Link to Heading IDs</h3>
+<p>Create a standard link with a number sign "#" followed by the heading ID</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>To know how to create a heading ID, see <a href="#Heading-IDs">Heading IDs</a>.</p>
+</div>
+<h2 id="definition-list">Definition List</h2>
+<p>To create a definition list, type the term on the first line. On the next line, type a colon followed by a space and the definition.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<dl>
+<dt>Markdown</dt>
+<dd>a lightweight markup language</dd>
+<dt>VS code</dt>
+<dd>a programming editor</dd>
+</dl>
+</div>
+<h2 id="strikethrough">Strikethrough</h2>
+<p>Put two tilde symbols "~" before and after the words.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>You can <del>strikethrough words</del>.</p>
+</div>
+<h2 id="task-list">Task List</h2>
+<p>To create a task list, add dashes (-) and brackets with a space ([ ]) in front of task list items.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Push Extended.md to GitHub</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Design the structure of my portfolio</li>
+</ul>
+</div>
+<h3 id="check-a-task-list">Check a Task List</h3>
+<p>To check a task list, put an x in between the brackets.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Push Extended.md to GitHub</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Design the structure of my portfolio</li>
+</ul>
+</div>
+<h2 id="emoji">Emoji</h2>
+<ul>
+<li>Copy and paste the emoji in the md file.</li>
+<li>Enter the emoji shortcode.<br />
+  Refer to the <a href="https://www.markdownguide.org/extended-syntax/">list of emoji shortcodes</a>.</li>
+</ul>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>Glad to meet you!<img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f603.svg" title=":smiley:" /><br />
+Do you think three-body people are real?<img alt="👽" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f47d.svg" title=":alien:" /><br />
+How about we go and get our nails done?<img alt="💅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f485.svg" title=":nail_care:" /></p>
+</div>
+<h2 id="word-highlighting">Word Highlighting</h2>
+<p>To highlight words, use two equal signs (==) before and after the words.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>This is a <mark>very important</mark> note.</p>
+</div>
+<h2 id="subscript">Subscript</h2>
+<p>To create a subscript, use one tilde symbol (~) before and after the characters.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>Charge your phone with 5V <sub>AC</sub>.</p>
+</div>
+<div class="admonition note note">
+<p class="admonition-title">Note</p>
+<p>Some applications use this syntax for strikethrough.</p>
+</div>
+<h2 id="superscript">Superscript</h2>
+<p>To create a superscript, use one caret symbol (^) before and after the characters.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>E=MC<sup>2</sup>.</p>
+</div>
+<p>[^1]: This is a footnote. <br />
+<code>This is a footnote</code></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
