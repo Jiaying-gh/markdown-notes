@@ -1,5 +1,23 @@
 site_name: Markdown_作品集
 
+nav:
+  - 简历: resume.md
+  - 学习笔记:
+    - Markdown 基础语法: notes/markdown-syntax-basic.md
+    - Markdown 扩展语法: notes/markdown-syntax-extended.md
+    - MkDocs FAQ: notes/mkdocs-faq.md
+  - 作品集: 
+    - 作品集概览: portfolio/index.md
+    - API文档: portfolio/API-documentation.md
+    - 用户手册: portfolio/how-to-guide.md
+    - 版本指南: portfolio/release-notes.md
+    - 用户教程: portfolio/tutorial.md
+    - 工具文档: portfolio/madcap-flare-operation-guide.md
+
+theme: readthedocs
+
+extra_css:
+  - styles/custom.css
 
 markdown_extensions:
   - admonition
@@ -15,3 +33,4 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list

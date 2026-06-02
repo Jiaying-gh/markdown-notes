@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Markdown 扩展语法 - Markdown_作品集</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../styles/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Markdown \u6269\u5c55\u8bed\u6cd5";
+        var mkdocs_page_input_path = "notes\\markdown-syntax-extended.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Markdown_作品集
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../resume/">简历</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">学习笔记</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../markdown-syntax-basic/">Markdown 基础语法</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Markdown 扩展语法</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#tables">Tables</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-tables">Create Tables</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#align-columns">Align Columns</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#add-other-elements-in-a-table">Add Other Elements in a Table</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fenced-code-blocks">Fenced Code Blocks</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#syntax-highlighting">Syntax Highlighting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#footnotes">Footnotes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#heading-ids">Heading IDs</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#link-to-heading-ids">Link to Heading IDs</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#definition-list">Definition List</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#strikethrough">Strikethrough</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#task-list">Task List</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#check-a-task-list">Check a Task List</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#emoji">Emoji</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#word-highlighting">Word Highlighting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#subscript">Subscript</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#superscript">Superscript</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../mkdocs-faq/">MkDocs FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">作品集</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../portfolio/">作品集概览</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../portfolio/API-documentation/">API文档</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../portfolio/how-to-guide/">用户手册</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../portfolio/release-notes/">版本指南</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../portfolio/tutorial/">用户教程</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../portfolio/madcap-flare-operation-guide/">工具文档</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Markdown_作品集</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">学习笔记</li>
+      <li class="breadcrumb-item active">Markdown 扩展语法</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="extended">Extended</h1>
+<h2 id="tables">Tables</h2>
+<h3 id="create-tables">Create Tables</h3>
+<p>Use three hyphens or more to create the table head and use pipes to create a column.</p>
+<p>The following table shows the rendered output.</p>
+<table>
+<thead>
+<tr>
+<th>Trees</th>
+<th>Growth Cycle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oak</td>
+<td>Annual</td>
+</tr>
+<tr>
+<td>Lemon</td>
+<td>Semi-annual</td>
+</tr>
+</tbody>
+</table>
+<h3 id="align-columns">Align Columns</h3>
+<p>To align columns to the left, right, or center, add the colon ":" to the left, right, or on both sides of the hyphen.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Trees</th>
+<th style="text-align: center;">Growth Cycle</th>
+<th style="text-align: right;">Leaf Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Oak</td>
+<td style="text-align: center;">Annual</td>
+<td style="text-align: right;">Large</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lemon</td>
+<td style="text-align: center;">Semi-annual</td>
+<td style="text-align: right;">Small</td>
+</tr>
+</tbody>
+</table>
+<h3 id="add-other-elements-in-a-table">Add Other Elements in a Table</h3>
+<p>You can add code, links, and emphasis.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Trees</th>
+<th style="text-align: center;">Growth Cycle</th>
+<th style="text-align: right;">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Oak</td>
+<td style="text-align: center;">Annual</td>
+<td style="text-align: right;"><code>This is an exaple code block</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Lemon</td>
+<td style="text-align: center;">Semi-annual</td>
+<td style="text-align: right;"><a href="https://uscitrusnursery.com/cdn/shop/articles/lemon-tree_1c2bd620-e725-4c4b-afec-d6cb651a6f4c.jpg?v=1765117676">lemon tree</a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip tip">
+<p class="admonition-title">Tip</p>
+<p>To create tables quickly and with GUI, try <a href="(https://www.tablesgenerator.com/markdown_tables#)">Markdown Tables Generator</a>.</p>
+</div>
+<div class="admonition note note">
+<p class="admonition-title">Note</p>
+<p>Separate a table with the previous content by at least a blank line, otherwise the table cannot be rendered as a table.</p>
+</div>
+<h2 id="fenced-code-blocks">Fenced Code Blocks</h2>
+<p>Put three backticks before and after the code block.</p>
+<pre><code>{
+    &quot;name&quot;: &quot;jiaying&quot;,
+    &quot;job&quot;: &quot;technical writer&quot;,
+    &quot;email&quot;: &quot;sisuzanel@163.com&quot;
+}
+</code></pre>
+<h2 id="syntax-highlighting">Syntax Highlighting</h2>
+<p>This allows elements in fenced blocks to be rendered in colors for highlighting.</p>
+<p>Specify the language after the starting three backticks.</p>
+<pre><code class="language-json">{
+    &quot;name&quot;: &quot;jiaying&quot;,
+    &quot;job&quot;: &quot;technical writer&quot;,
+    &quot;email&quot;: &quot;sisuzanel@163.com&quot;
+}
+</code></pre>
+<h2 id="footnotes">Footnotes</h2>
+<p>To add a footnote reference, add a caret and an identifier inside a pair of brackets.
+To add the footnote,  use another caret and number inside brackets with a colon and text.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>This line has a footnote.[^1]</p>
+</div>
+<h2 id="heading-ids">Heading IDs</h2>
+<p>Enclose the custom ID in curly braces on the same line as the heading. </p>
+<div class="admonition note note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Do not put spaces in heading IDs.</li>
+<li>To use heading IDs in MkDocs, use the  foliantcontrib.customids plug-in first.</li>
+</ul>
+</div>
+<h3 id="link-to-heading-ids">Link to Heading IDs</h3>
+<p>Create a standard link with a number sign "#" followed by the heading ID</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>To know how to create a heading ID, see <a href="#Heading-IDs">Heading IDs</a>.</p>
+</div>
+<h2 id="definition-list">Definition List</h2>
+<p>To create a definition list, type the term on the first line. On the next line, type a colon followed by a space and the definition.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<dl>
+<dt>Markdown</dt>
+<dd>a lightweight markup language</dd>
+<dt>VS code</dt>
+<dd>a programming editor</dd>
+</dl>
+</div>
+<h2 id="strikethrough">Strikethrough</h2>
+<p>Put two tilde symbols "~" before and after the words.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>You can <del>strikethrough words</del>.</p>
+</div>
+<h2 id="task-list">Task List</h2>
+<p>To create a task list, add dashes (-) and brackets with a space ([ ]) in front of task list items.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Push Extended.md to GitHub</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Design the structure of my portfolio</li>
+</ul>
+</div>
+<h3 id="check-a-task-list">Check a Task List</h3>
+<p>To check a task list, put an x in between the brackets.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Push Extended.md to GitHub</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Design the structure of my portfolio</li>
+</ul>
+</div>
+<h2 id="emoji">Emoji</h2>
+<ul>
+<li>Copy and paste the emoji in the md file.</li>
+<li>Enter the emoji shortcode.<br />
+  Refer to the <a href="https://www.markdownguide.org/extended-syntax/">list of emoji shortcodes</a>.</li>
+</ul>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>Glad to meet you!<img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f603.svg" title=":smiley:" /><br />
+Do you think three-body people are real?<img alt="👽" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f47d.svg" title=":alien:" /><br />
+How about we go and get our nails done?<img alt="💅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f485.svg" title=":nail_care:" /></p>
+</div>
+<h2 id="word-highlighting">Word Highlighting</h2>
+<p>To highlight words, use two equal signs (==) before and after the words.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>This is a <mark>very important</mark> note.</p>
+</div>
+<h2 id="subscript">Subscript</h2>
+<p>To create a subscript, use one tilde symbol (~) before and after the characters.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>Charge your phone with 5V <sub>AC</sub>.</p>
+</div>
+<div class="admonition note note">
+<p class="admonition-title">Note</p>
+<p>Some applications use this syntax for strikethrough.</p>
+</div>
+<h2 id="superscript">Superscript</h2>
+<p>To create a superscript, use one caret symbol (^) before and after the characters.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p>E=MC<sup>2</sup>.</p>
+</div>
+<p>[^1]: This is a footnote. <br />
+<code>This is a footnote</code></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../markdown-syntax-basic/" class="btn btn-neutral float-left" title="Markdown 基础语法"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../mkdocs-faq/" class="btn btn-neutral float-right" title="MkDocs FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../markdown-syntax-basic/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../mkdocs-faq/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
