@@ -9,14 +9,6 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.utils import formataddr
 
-SMTP_CONFIG = {
-    "host": "smtp.163.com",
-    "port": 465,
-    "user": "sisuzanel@163.com",
-    "password": "FUyz5kfR99kVENNA",
-    "use_ssl": True,
-}
-
 def send_email(to_addr, subject, body, cc=None):
     msg = MIMEMultipart("alternative")
     msg["From"] = formataddr((str(Header("技术写作日报", "utf-8")), SMTP_CONFIG["user"]))
