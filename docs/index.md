@@ -1,17 +1,36 @@
-# Welcome to MkDocs
+# 技术写作作品集
+欢迎来到我的个人站点。这里有我的个人简历、作品集和学习笔记。  
+谢谢你的时间。如果有任何建议，非常欢迎联系我。
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# 关于站点
+本站点使用 Mkdocs 创建，使用 Cinder 主题。
 
-## Commands
+# 关于我
+以下是一些我的关键信息。
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+**岗位**  
+技术文档工程师
 
-## Project layout
+**专业摘要**  
+- 4年技术写作经验，熟悉结构化写作及文档即代码(Docs-as-code)实践。  
+- 为软件产品提供清晰、准确、用户导向的技术文档，如用户手册、产品概述、API文档。
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## 核心能力
+|领域|工具|
+|---|---|
+|文档写作|Madcap Flare，Oxygen XML Editor|
+|内容管理|Git|
+|画图|Visio，PowerPoint|
+|站点生成|Mkdocs|
+
+## 工作经历
+|技术文档翻译工程师|通信公司|
+|---|---|
+|- 独立维护 4 条产品线的技术文档|
+
+## 联系方式
+- 电话：15086806890
+- 微信：电话同号
+- 邮箱：sisuzanel@163.com
+
+更多细节请查看我的[简历](./resume.md)

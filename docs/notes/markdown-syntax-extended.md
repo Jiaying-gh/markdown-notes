@@ -24,7 +24,7 @@ You can add code, links, and emphasis.
 
 |Trees   |Growth Cycle  |Link|
 |:-------|:------------:|--------:|
-|Oak     |Annual        |`This is an exaple code block`|
+|Oak     |Annual        |`This is an example code block`|
 |Lemon   |Semi-annual   |[lemon tree](https://uscitrusnursery.com/cdn/shop/articles/lemon-tree_1c2bd620-e725-4c4b-afec-d6cb651a6f4c.jpg?v=1765117676)|
 
 !!!tip Tip

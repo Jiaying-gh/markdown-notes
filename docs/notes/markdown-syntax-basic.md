@@ -63,7 +63,7 @@ Put an exclamation mark "!" before the alt  text, and follow the alt text with t
     - Users may use screen readers.
     - Users may have limited network speed to load an image.  
 
-![oak tree](./images/oak-tree.webp)
+![oak tree](./notes-images/oak-tree.webp)
 
 ### Reference images
 1. Put an exclamation mark "!" before the link  text.
@@ -129,6 +129,6 @@ Start a new line, and then indent the line by at least one space.
        Make sure the files are closed.
 
 <!--以下为链接--!>
-[daisy flower]: ./images/daisy.webp
+[daisy flower]: ./notes-images/daisy.webp
 
 

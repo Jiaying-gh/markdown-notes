@@ -1,11 +1,7 @@
 site_name: Markdown_作品集
 
 nav:
-  - 简历: resume.md
-  - 学习笔记:
-    - Markdown 基础语法: notes/markdown-syntax-basic.md
-    - Markdown 扩展语法: notes/markdown-syntax-extended.md
-    - MkDocs FAQ: notes/mkdocs-faq.md
+  - 介绍: index.md
   - 作品集: 
     - 作品集概览: portfolio/index.md
     - API文档: portfolio/API-documentation.md
@@ -13,8 +9,18 @@ nav:
     - 版本指南: portfolio/release-notes.md
     - 用户教程: portfolio/tutorial.md
     - 工具文档: portfolio/madcap-flare-operation-guide.md
+  - 简历:
+    - 中文简历: resume.md
+    - English: resume-en.md
+  - 学习笔记:
+    - Markdown 基础语法: notes/markdown-syntax-basic.md
+    - Markdown 扩展语法: notes/markdown-syntax-extended.md
+    - MkDocs FAQ: notes/mkdocs-faq.md
 
-theme: readthedocs
+
+theme: 
+  name: null
+  custom_dir: 'cinder'
 
 extra_css:
   - styles/custom.css
