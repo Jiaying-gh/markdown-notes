@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>工具文档 - Markdown_作品集</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+    <link href="../../styles/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">Markdown_作品集</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">介绍</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">作品集 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../">作品集概览</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../API-documentation/">API文档</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../how-to-guide/">用户手册</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../release-notes/">版本指南</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../tutorial/">用户教程</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">工具文档</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">简历 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../resume/">中文简历</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../resume-en/">English</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">学习笔记 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../notes/markdown-syntax-basic/">Markdown 基础语法</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../notes/markdown-syntax-extended/">Markdown 扩展语法</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../notes/mkdocs-faq/">MkDocs FAQ</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../tutorial/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../resume/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#toc-heading">目录 {#目录 .TOC-Heading}</a></li>
+        <li class="first-level "><a href="#_1">文档概览</a></li>
+            <li class="second-level"><a href="#_2">文档目的</a></li>
+                
+            <li class="second-level"><a href="#_3">目标读者</a></li>
+                
+            <li class="second-level"><a href="#_4">适用范围</a></li>
+                
+        <li class="first-level "><a href="#_5">基本概念</a></li>
+            <li class="second-level"><a href="#topic">Topic</a></li>
+                
+            <li class="second-level"><a href="#target">Target</a></li>
+                
+            <li class="second-level"><a href="#toc">TOC</a></li>
+                
+            <li class="second-level"><a href="#snippet">Snippet</a></li>
+                
+            <li class="second-level"><a href="#text-editor">Text Editor</a></li>
+                
+            <li class="second-level"><a href="#xml-editor">XML Editor</a></li>
+                
+        <li class="first-level "><a href="#_6">工作流程</a></li>
+        <li class="first-level "><a href="#_7">文字相关操作</a></li>
+            <li class="second-level"><a href="#topic_1">编辑Topic内容</a></li>
+                
+                <li class="third-level"><a href="#_8">使用场景</a></li>
+                <li class="third-level"><a href="#_9">步骤</a></li>
+            <li class="second-level"><a href="#topic_2">添加新的Topic</a></li>
+                
+                <li class="third-level"><a href="#_10">使用场景</a></li>
+                <li class="third-level"><a href="#_11">步骤</a></li>
+            <li class="second-level"><a href="#_12">打开跳转页面</a></li>
+                
+                <li class="third-level"><a href="#_13">使用场景</a></li>
+                <li class="third-level"><a href="#_14">步骤</a></li>
+            <li class="second-level"><a href="#_15">添加超链接</a></li>
+                
+                <li class="third-level"><a href="#_16">使用场景</a></li>
+                <li class="third-level"><a href="#_17">步骤</a></li>
+            <li class="second-level"><a href="#_18">设置发布格式</a></li>
+                
+                <li class="third-level"><a href="#_19">使用场景</a></li>
+                <li class="third-level"><a href="#_20">步骤</a></li>
+            <li class="second-level"><a href="#_21">打开拼写检查</a></li>
+                
+        <li class="first-level "><a href="#_22">图片相关操作</a></li>
+            <li class="second-level"><a href="#resources">添加图片到resources文件夹</a></li>
+                
+                <li class="third-level"><a href="#_23">使用场景</a></li>
+                <li class="third-level"><a href="#_24">步骤</a></li>
+            <li class="second-level"><a href="#_25">添加新图片</a></li>
+                
+                <li class="third-level"><a href="#_26">使用场景</a></li>
+                <li class="third-level"><a href="#_27">步骤</a></li>
+            <li class="second-level"><a href="#_28">更换截图</a></li>
+                
+                <li class="third-level"><a href="#_29">使用场景</a></li>
+                <li class="third-level"><a href="#_30">步骤</a></li>
+            <li class="second-level"><a href="#_31">更改图片大小</a></li>
+                
+                <li class="third-level"><a href="#_32">使用场景</a></li>
+                <li class="third-level"><a href="#_33">步骤</a></li>
+            <li class="second-level"><a href="#_34">更改图片位置</a></li>
+                
+                <li class="third-level"><a href="#_35">使用场景</a></li>
+                <li class="third-level"><a href="#_36">步骤</a></li>
+            <li class="second-level"><a href="#_37">设置发布格式</a></li>
+                
+        <li class="first-level "><a href="#_38">表格相关操作</a></li>
+            <li class="second-level"><a href="#_39">插入行或列</a></li>
+                
+                <li class="third-level"><a href="#_40">使用场景</a></li>
+                <li class="third-level"><a href="#_41">步骤</a></li>
+            <li class="second-level"><a href="#_42">删除行或列</a></li>
+                
+                <li class="third-level"><a href="#_43">使用场景</a></li>
+                <li class="third-level"><a href="#_44">步骤</a></li>
+        <li class="first-level "><a href="#_45">发布相关操作</a></li>
+            <li class="second-level"><a href="#primary-target">设置Primary Target</a></li>
+                
+                <li class="third-level"><a href="#_46">使用场景</a></li>
+                <li class="third-level"><a href="#_47">步骤</a></li>
+            <li class="second-level"><a href="#primary-target_1">查看Primary Target设置</a></li>
+                
+            <li class="second-level"><a href="#master-toc">设置Master TOC</a></li>
+                
+                <li class="third-level"><a href="#_48">使用场景</a></li>
+                <li class="third-level"><a href="#_49">步骤</a></li>
+            <li class="second-level"><a href="#master-toc_1">查看Master TOC设置</a></li>
+                
+            <li class="second-level"><a href="#_50">改变章节顺序</a></li>
+                
+                <li class="third-level"><a href="#_51">使用场景</a></li>
+                <li class="third-level"><a href="#_52">步骤</a></li>
+            <li class="second-level"><a href="#_53">预览发布内容</a></li>
+                
+                <li class="third-level"><a href="#_54">使用场景</a></li>
+                <li class="third-level"><a href="#_55">步骤</a></li>
+            <li class="second-level"><a href="#logo">删除公司logo</a></li>
+                
+                <li class="third-level"><a href="#_56">使用场景</a></li>
+                <li class="third-level"><a href="#_57">步骤</a></li>
+            <li class="second-level"><a href="#_58">保存</a></li>
+                
+            <li class="second-level"><a href="#_59">发布文件</a></li>
+                
+                <li class="third-level"><a href="#_60">使用场景</a></li>
+                <li class="third-level"><a href="#_61">步骤</a></li>
+        <li class="first-level "><a href="#_62">常见问题</a></li>
+        <li class="first-level "><a href="#xml">常用格式的 XML 代码</a></li>
+        <li class="first-level "><a href="#_63">相关资料</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<p>操作指南（面向翻译）</p>
+<p>MadCap Flare</p>
+<h1 id="toc-heading">目录 {#目录 .TOC-Heading}</h1>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870215">1. 文档概览
+[4](#文档概览)</a></p>
+<blockquote>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870216">1.1 文档目的
+[4](#文档目的)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870217">1.2 目标读者
+[4](#目标读者)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870218">1.3 适用范围
+[4](#适用范围)</a></p>
+</blockquote>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870219">2. 基本概念
+[5](#基本概念)</a></p>
+<blockquote>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870220">2.1 Topic
+[5](#topic)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870221">2.2 Target
+[5](#target)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870222">2.3 TOC
+[6](#toc)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870223">2.4 Snippet
+[7](#snippet)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870224">2.5 Text Editor
+[8](#text-editor)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870225">2.6 XML Editor
+[9](#xml-editor)</a></p>
+</blockquote>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870226">3. 工作流程
+[10](#工作流程)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870227">4. 文字相关操作
+[14](#文字相关操作)</a></p>
+<blockquote>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870228">4.1 编辑Topic内容
+[14](#编辑topic内容)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870229">4.2 添加新的Topic
+[14](#添加新的topic)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870230">4.3 打开跳转页面
+[16](#打开跳转页面)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870231">4.4 添加超链接
+[17](#添加超链接)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870232">4.5 设置发布格式
+[18](#设置发布格式)</a></p>
+</blockquote>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870233">5. 图片相关操作
+[20](#图片相关操作)</a></p>
+<blockquote>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870234">5.1 添加图片到resources文件夹
+[20](#添加图片到resources文件夹)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870235">5.2 添加新图片
+[20](#添加新图片)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870236">5.3 更换截图
+[21](#更换截图)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870237">5.4 更改图片大小
+[23](#更改图片大小)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870238">5.5 更改图片位置
+[24](#更改图片位置)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870239">5.6 设置发布格式
+[25](#设置发布格式-1)</a></p>
+</blockquote>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870240">6. 表格相关操作
+[26](#表格相关操作)</a></p>
+<blockquote>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870241">6.1 插入行或列
+[26](#插入行或列)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870242">6.2 删除行或列
+[26](#删除行或列)</a></p>
+</blockquote>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870243">7. 发布相关操作
+[28](#发布相关操作)</a></p>
+<blockquote>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870244">7.1 设置Primary Target
+[28](#设置primary-target)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870245">7.2 查看Primary Target设置
+[28](#查看primary-target设置)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870246">7.3 设置Master TOC
+[29](#设置master-toc)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870247">7.4 查看Master TOC设置
+[29](#查看master-toc设置)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870248">7.5 改变章节顺序
+[30](#改变章节顺序)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870249">7.6 预览发布内容
+[30](#预览发布内容)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870250">7.7 删除公司logo
+[31](#删除公司logo)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870251">7.8 保存
+[31](#保存)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870252">7.9 发布文件
+[32](#发布文件)</a></p>
+</blockquote>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870253">8. 常见问题
+[34](#常见问题)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870254">9. 常用格式的 XML 代码
+[38](#常用格式的-xml-代码)</a></p>
+<p><a href="file:///D:\02-项目总结\平台工作\小组分享\Flare%20使用教程\MadCap%20Flare%20操作指南（面向翻译）%20V01.docx#_Toc204870255">10. 相关资料
+[39](#相关资料)</a></p>
+<p>前言</p>
+<p>本文档主要介绍MadCap
+Flare软件的基本操作，旨在帮助资料部同事输出网管产品的联机帮助、操作指南。</p>
+<h1 id="_1">文档概览</h1>
+<h2 id="_2">文档目的</h2>
+<p>本指南主要介绍MadCap
+Flare软件的基本概念、相关操作、常见问题，方便不熟悉该软件的同事迅速了解软件的常用操作，提高系统产品相关的工作效率。</p>
+<h2 id="_3">目标读者</h2>
+<p>本指南的主要读者是英文技术写作、翻译、审校人员。</p>
+<h2 id="_4">适用范围</h2>
+<p>本指南主要适用于网管产品的联机帮助、操作指南、产品概述等产品资料。</p>
+<h1 id="_5">基本概念</h1>
+<p>MadCap Flare
+是一款专为技术写作开发的同源写作软件，旨在将文档切分为单个模块，以维护单个模块的方式维护整个文档，最大限度地重复使用内容，并输出到多个渠道。</p>
+<p>在翻译组的系统产品维护工作中，主要涉及该软件的以下几个概念。</p>
+<h2 id="topic">Topic</h2>
+<p>Topic相当于文档中的小节，包含了针对某个对象、话题的信息。</p>
+<p><img alt="企业微信截图_16795700432715" src="../media/2.1-1.png" />{width="6.845833333333333in"
+height="3.7381944444444444in"}</p>
+<h2 id="target">Target</h2>
+<p>Target是最终输出的文件，由多个Topic组成。</p>
+<p><img alt="企业微信截图_16795699387478" src="../media/2.2-1.png" />{width="6.845833333333333in"
+height="3.7381944444444444in"}</p>
+<h2 id="toc">TOC</h2>
+<p>TOC（Table of Content）是Target的目录文件。</p>
+<p><img alt="企业微信截图_16795701909102" src="../media/2.3-1.png" />{width="6.845833333333333in"
+height="3.7381944444444444in"}</p>
+<h2 id="snippet">Snippet</h2>
+<p>Snippet包含了一个Flare项目在不同渠道能多次利用的内容，可包括文字、图片、表格等。</p>
+<p><img alt="企业微信截图_16795703652996" src="../media/2.4-1.png" />{width="6.845833333333333in"
+height="3.7381944444444444in"}</p>
+<h2 id="text-editor">Text Editor</h2>
+<p>Text Editor显示该页面的具体内容，如文字、图片、表格。</p>
+<p><img alt="企业微信截图_16795706882731" src="../media/2.5-1.png" />{width="6.845833333333333in"
+height="3.7381944444444444in"}</p>
+<h2 id="xml-editor">XML Editor</h2>
+<p>XML Editor显示该页面内容的代码信息。</p>
+<p><img alt="企业微信截图_1679570644130" src="../media/2.6-1.png" />{width="6.845833333333333in"
+height="3.7381944444444444in"}</p>
+<h1 id="_6">工作流程</h1>
+<ul>
+<li>更新文档（多数）</li>
+</ul>
+<p>a.  打开 Flare 文件。</p>
+<pre><code>  i.  在 SVN 找到上个版本的 Flare 压缩文件包，拖拽保存到本地。
+</code></pre>
+<p><img alt="企业微信截图_16795721995743" src="../media/3.0-1.png" />{width="6.845833333333333in"
+height="4.6in"}</p>
+<p>+-----------------------------------------------------------------------+
+| <img alt="" src="../media/3.0-2.wmf" />{width="0.6305555555555555in"                  |
+| height="0.24583333333333332in"}                                       |
++=======================================================================+
+| &gt; 一些 Flare 文件较大，保存到本地耗时较久，属于正常情况。             |
++-----------------------------------------------------------------------+</p>
+<p>ii. 解压文件包。</p>
+<pre><code>解压后，文件夹一般包含
+"Analyzer"，"Content"，"Filesync"，"Output"，"Project"文件夹及
+.FLPRJ 文件。
+</code></pre>
+<p><img alt="企业微信截图_1679572320735" src="../media/3.0-3.png" />{width="6.8381944444444445in"
+height="3.745833333333333in"}</p>
+<p>iii. 双击打开 .FLPRJ 文件。</p>
+<p>iv. （可选）如果打开文件后，系统弹出"New Updates
+    Available"对话框，单击"Cancel"。</p>
+<!-- -->
+
+<p>b.  对照中文的修改记录，完成英文 Flare 文件的更新。</p>
+<p>c.  发布文件。</p>
+<p>d.  []{#交付文件 .anchor}交付文件。打开"Flare 本地文件夹 &gt; Output &gt;
+    工号文件夹 &gt; 交付文件所在文件夹"。</p>
+<ul>
+<li>如果交付操作指南、产品概述，将 .pdf 文件发给需求人即可。</li>
+</ul>
+<p><img alt="企业微信截图_16795732479932" src="../media/3.0-4.png" />{width="6.8381944444444445in"
+height="3.7694444444444444in"}</p>
+<ul>
+<li>如果交付联机帮助，先将整个联机帮助文件夹压缩打包，再发给需求人。</li>
+</ul>
+<p><img alt="企业微信截图_16795733232705" src="../media/3.0-5.png" />{width="6.8381944444444445in"
+height="3.754166666666667in"}</p>
+<ul>
+<li>制作全新文档</li>
+</ul>
+<p>直接用中文 Flare 文件修改，省去调整格式的时间。</p>
+<p>a.  将中文 Flare 文件拖拽保存到本地。</p>
+<!-- -->
+
+<p>a.  打开中文Flare 文件，另存为英文 Flare 文件。</p>
+<p>b.  修改内容后交付（步骤和要求同更新文档，参考 <a href="#交付文件">交付文件</a>）。</p>
+<h1 id="_7">文字相关操作</h1>
+<h2 id="topic_1">编辑Topic内容</h2>
+<h5 id="_8">使用场景</h5>
+<p>根据中文修订记录，需要增删某个Topic的文字内容。</p>
+<h5 id="_9">步骤</h5>
+<ol>
+<li>
+<p>打开要修订的Topic。</p>
+</li>
+<li>
+<p>将光标定位到需要编辑的地方后，即可增删文字。</p>
+</li>
+</ol>
+<p><img alt="企业微信截图_16799803908751" src="../media/4.1-1.png" />{width="5.769444444444445in"
+height="2.8381944444444445in"}</p>
+<p>+-----------------------------------------------------------------------+
+| <img alt="" src="../media/4.1-2.wmf" />{width="0.7923611111111111in"                 |
+| height="0.23819444444444443in"}                                       |
++=======================================================================+
+| &gt; 如果Topic的内容无法编辑，参考<a href="#内容无法编辑">Topic的内容无法编辑</a>。 |
++-----------------------------------------------------------------------+</p>
+<h2 id="topic_2">添加新的Topic</h2>
+<h5 id="_10">使用场景</h5>
+<p>若此次修订中需要增加新的小节，则需要添加Topic。</p>
+<p>以给"BasicOperations"一章添加名为"Learn Flare"的topic为例。</p>
+<h5 id="_11">步骤</h5>
+<ol>
+<li>
+<p>单击"Project Organizer &gt; TOCs"。</p>
+</li>
+<li>
+<p>双击文件名，打开文件目录。</p>
+</li>
+</ol>
+<p><img alt="企业微信截图_1679110888565" src="../media/4.2-1.png" />{width="5.761805555555555in"
+height="3.1458333333333335in"}</p>
+<ol>
+<li>
+<p>右键单击一级标题，选择"Add New Topic..."。</p>
+</li>
+<li>
+<p>单击"Folder"后面的<img alt="企业微信截图_1679111555344" src="../media/4.2-2.png" />{width="0.2847222222222222in"
+    height="0.2152777777777778in"}。</p>
+</li>
+<li>
+<p>在"Select
+    Folder"对话框中，选择一级标题文件夹（"BasicOperations"），单击"OK"。</p>
+</li>
+</ol>
+<p><img alt="企业微信截图_16791116881324" src="../media/4.2-3.png" />{width="3.7847222222222223in"
+height="2.8694444444444445in"}</p>
+<ol>
+<li>
+<p>在"File Name:"对话框输入topic的标题（"Learn Flare"）。</p>
+</li>
+<li>
+<p>单击"Add"。</p>
+</li>
+</ol>
+<p>系统自动打开并停留在"Learn Flare"页面。</p>
+<p><img alt="企业微信截图_16791122516250" src="../media/4.2-4.png" />{width="5.361805555555556in"
+height="2.722916666666667in"}</p>
+<ol>
+<li>点击<img alt="企业微信截图_16791091788848" src="../media/4.2-5.png" />{width="0.26180555555555557in"
+    height="0.22291666666666668in"}，保存更改。</li>
+</ol>
+<h2 id="_12">打开跳转页面</h2>
+<h5 id="_13">使用场景</h5>
+<p>联机帮助中，每个章节的首页都有本章二级标题的跳转链接汇总。可点击跳转链接到某个页面，再做修改。比如，以下页面的蓝色字体均为跳转到其他页面的超链接。要打开"Introduction"页面，按住【Ctrl】键，同时单击"Introduction".</p>
+<h5 id="_14">步骤</h5>
+<p>按住Ctrl键，单击页面标题（蓝色字体）</p>
+<p><img alt="企业微信截图_16791094279241" src="../media/4.3-1.png" />{width="5.645833333333333in"
+height="2.915277777777778in"}</p>
+<h2 id="_15">添加超链接</h2>
+<h5 id="_16">使用场景</h5>
+<p>各个一级标题下，有一个topic用于跳转到二级标题的页面。</p>
+<p>比如，在"Basic Operations"页面添加"Learn Flare"页面的跳转链接。</p>
+<p><img alt="企业微信截图_16791127825040" src="../media/4.4-1.png" />{width="5.761805555555555in"
+height="3.1458333333333335in"}</p>
+<h5 id="_17">步骤</h5>
+<ol>
+<li>
+<p>插入Learn Flare标题</p>
+</li>
+<li>
+<p>复制粘贴</p>
+</li>
+</ol>
+<p>i.  复制已有topic的标题和简介，粘贴到适当位置。</p>
+<p>ii. 将topic标题改为"Learn Flare"，修改简介。</p>
+<p>iii. 右键单击"Learn Flare"，选择"Edit Hyperlink"。</p>
+<ul>
+<li>直接输入</li>
+</ul>
+<p>i.  在适当位置输入"Learn Flare"与简介。</p>
+<p>ii. 选中"Learn Flare"后，单击右键。</p>
+<p>iii. 选择"Insert &gt; Hyperlink"。</p>
+<!-- -->
+
+<ol>
+<li>
+<p>在"Insert Hyperlink"对话框中，选择"Learn Flare"。</p>
+</li>
+<li>
+<p>单击"OK"。</p>
+</li>
+</ol>
+<p><img alt="企业微信截图_16791172758090" src="../media/4.4-2.png" />{width="5.761805555555555in"
+height="4.815277777777778in"}</p>
+<h2 id="_18">设置发布格式</h2>
+<h5 id="_19">使用场景</h5>
+<p>发布到联机帮助与操作指南的内容可能有出入。编辑Topic时，需要选择内容发布到哪种格式。</p>
+<h5 id="_20">步骤</h5>
+<ol>
+<li>右键单击要修改的内容，选择"Conditions..."。</li>
+</ol>
+<p><img alt="企业微信截图_16791232142584" src="../media/4.5-1.png" />{width="5.207638888888889in"
+height="3.6618055555555555in"}</p>
+<ol>
+<li>
+<p>选择输出格式。</p>
+</li>
+<li>
+<p>勾选"hlp"，内容输出到联机帮助。</p>
+</li>
+<li>
+<p>勾选"opg"，内容输出到操作指南。</p>
+</li>
+<li>
+<p>单击"OK"。</p>
+</li>
+</ol>
+<h2 id="_21">打开拼写检查</h2>
+<ol>
+<li>
+<p>选择"Projects &gt; Project Properties"。</p>
+</li>
+<li>
+<p>点击"Language"。</p>
+</li>
+<li>
+<p>选中"English (United States)"，点击"OK"。</p>
+</li>
+<li>
+<p>选择"Tools"。</p>
+</li>
+<li>
+<p>勾选"Spell check while typing\"。</p>
+</li>
+<li>
+<p>重启项目，更改生效。</p>
+</li>
+</ol>
+<h1 id="_22">图片相关操作</h1>
+<h2 id="resources">添加图片到resources文件夹</h2>
+<h5 id="_23">使用场景</h5>
+<p>网管的联机帮助和操作指南基本每个步骤都要配图。插入的图片多为页面截图。</p>
+<p>以用企业微信截图为例。</p>
+<h5 id="_24">步骤</h5>
+<ol>
+<li>
+<p>用企业微信截图。</p>
+</li>
+<li>
+<p>右键单击截图，给图片命名，保存到非加密盘（一般为F盘）。</p>
+</li>
+<li>
+<p>在沙盒中打开非加密盘。</p>
+</li>
+<li>
+<p>将该图片复制粘贴到"resources"文件夹下对应的文件夹内。</p>
+</li>
+</ol>
+<h2 id="_25">添加新图片</h2>
+<h5 id="_26">使用场景</h5>
+<p>系统有了新功能，需要在新的topic中加入配图。</p>
+<h5 id="_27">步骤</h5>
+<ol>
+<li>
+<p>将光标定位在插入图片的位置。</p>
+</li>
+<li>
+<p>单击<img alt="企业微信截图_1679118081265" src="../media/5.2-1.png" />{width="0.26944444444444443in"
+    height="0.19236111111111112in"}。</p>
+</li>
+<li>
+<p>在"Insert Image"对话框中，选择"Resources &gt; Images".</p>
+</li>
+<li>
+<p>在相应文件夹中选择要插入的图片，点击"OK"。</p>
+</li>
+</ol>
+<p><img alt="企业微信截图_16791199541795" src="../media/5.2-2.png" />{width="5.761805555555555in"
+height="3.1458333333333335in"}</p>
+<h2 id="_28">更换截图</h2>
+<h5 id="_29">使用场景</h5>
+<p>系统页面更新后，需要更换操作步骤的配图。</p>
+<p>以用企业微信截图为例</p>
+<h5 id="_30">步骤</h5>
+<ol>
+<li>
+<p>查看旧截图的文件夹位置。</p>
+<p>a.  选中旧截图。</p>
+<p>b.  点击"Text Editor"。</p>
+</li>
+</ol>
+<p><img alt="图片的保存路径是 &quot;Resources &gt; Images&quot;，名为 &quot;Learn
+Flare&quot;" src="../media/5.3-1.png" />{alt="企业微信截图_16791212873167"
+width="5.3381944444444445in" height="2.907638888888889in"}</p>
+<ol>
+<li>
+<p>复制图片名（"Learn Flare"）。</p>
+</li>
+<li>
+<p>用企业微信截取系统新页面，命名时可粘贴图片名（"Learn
+    Flare"），保存到非加密盘。</p>
+</li>
+<li>
+<p>将非机密盘的图片粘贴到"Resources"下旧截图所在的文件夹。</p>
+</li>
+<li>
+<p>在弹出的提示框中，单击"替换目标中的文件"。</p>
+</li>
+</ol>
+<p>页面的配图将自动替换为新截图。</p>
+<p><img alt="企业微信截图_16791212092418" src="../media/5.3-2.png" />{width="4.822916666666667in"
+height="3.0694444444444446in"}</p>
+<h2 id="_31">更改图片大小</h2>
+<h5 id="_32">使用场景</h5>
+<p>插图图片后，需要根据输出格式更改图片大小。</p>
+<h5 id="_33">步骤</h5>
+<ol>
+<li>
+<p>选中图片。</p>
+</li>
+<li>
+<p>将鼠标悬停在图片右下角。</p>
+</li>
+<li>
+<p>选中图片光标，更改图片大小。</p>
+</li>
+</ol>
+<p>+-----------------------------------------------------------------------+
+| <img alt="" src="../media/3.0-2.wmf" />{width="0.6305555555555555in"                  |
+| height="0.24583333333333332in"}                                       |
++=======================================================================+
+| &gt; 对于以 .pdf 格式发布的资料，图片宽度一般需小于 600 px。             |
++-----------------------------------------------------------------------+</p>
+<p><img alt="企业微信截图_16791216514359" src="../media/5.4-1.png" />{width="5.761805555555555in"
+height="3.1458333333333335in"}</p>
+<h2 id="_34">更改图片位置</h2>
+<h5 id="_35">使用场景</h5>
+<p>插图图片后，需要根据输出格式更改图片位置。</p>
+<h5 id="_36">步骤</h5>
+<ol>
+<li>
+<p>选中图片。</p>
+</li>
+<li>
+<p>单击"Home"页签，选择图片位置。</p>
+</li>
+</ol>
+<p><img alt="企业微信截图_16791221001752" src="../media/5.5-1.png" />{width="5.761805555555555in"
+height="3.1458333333333335in"}</p>
+<h2 id="_37">设置发布格式</h2>
+<p>参考<a href="#设置发布格式">4.5</a> <a href="#设置发布格式">设置发布格式</a>。</p>
+<h1 id="_38">表格相关操作</h1>
+<h2 id="_39">插入行或列</h2>
+<h5 id="_40">使用场景</h5>
+<p>修改后续操作、参数表格时，常需插入新的行或列。</p>
+<p>以插入行为例。</p>
+<h5 id="_41">步骤</h5>
+<ol>
+<li>
+<p>右键单击选中表格中的某行。</p>
+</li>
+<li>
+<p>选择"Insert"。</p>
+</li>
+<li>
+<p>根据需求选择新行或新列的位置。</p>
+</li>
+</ol>
+<p><img alt="" src="../media/6.1-1.png" />{width="5.777083333333334in"
+height="3.1305555555555555in"}</p>
+<h2 id="_42">删除行或列</h2>
+<h5 id="_43">使用场景</h5>
+<p>修改后续操作、参数表格时，常需删除行或列。</p>
+<p>以删除行为例。</p>
+<h5 id="_44">步骤</h5>
+<ol>
+<li>
+<p>右键选中表格中的某行。</p>
+</li>
+<li>
+<p>选择"Delete"。</p>
+</li>
+<li>
+<p>根据需求选择删除行或列的位置。</p>
+</li>
+</ol>
+<p><img alt="" src="../media/6.2-1.png" />{width="5.777083333333334in"
+height="3.1152777777777776in"}</p>
+<h1 id="_45">发布相关操作</h1>
+<h2 id="primary-target">设置Primary Target</h2>
+<h5 id="_46">使用场景</h5>
+<p>发布内容前，需先将文件设置为Primary Target。</p>
+<h5 id="_47">步骤</h5>
+<ol>
+<li>
+<p>单击"Project Organizer &gt; Targets"。</p>
+</li>
+<li>
+<p>右键选择发布文件，选择"Make Primary"。</p>
+</li>
+</ol>
+<h2 id="primary-target_1">查看Primary Target设置</h2>
+<ol>
+<li>
+<p>单击"Project"。</p>
+</li>
+<li>
+<p>双击"Primary Target"。</p>
+</li>
+</ol>
+<p><img alt="企业微信截图_1679570908990" src="../media/7.2-1.png" />{width="6.845833333333333in"
+height="3.7381944444444444in"}</p>
+<h2 id="master-toc">设置Master TOC</h2>
+<h5 id="_48">使用场景</h5>
+<p>发布内容前，需先将文件的TOC设置为Master TOC。</p>
+<h5 id="_49">步骤</h5>
+<ol>
+<li>
+<p>单击"Project Organizer &gt; TOCs"。</p>
+</li>
+<li>
+<p>右键选择发布文件，选择"Make Master TOC"。</p>
+</li>
+</ol>
+<h2 id="master-toc_1">查看Master TOC设置</h2>
+<ol>
+<li>
+<p>单击"Project"。</p>
+</li>
+<li>
+<p>双击"Master TOC"。</p>
+</li>
+</ol>
+<p><img alt="企业微信截图_16795710274181" src="../media/7.4-1.png" />{width="6.845833333333333in"
+height="3.7381944444444444in"}</p>
+<h2 id="_50">改变章节顺序</h2>
+<h5 id="_51">使用场景</h5>
+<p>文档更新后，改变了原有章节的顺序。</p>
+<h5 id="_52">步骤</h5>
+<ol>
+<li>
+<p>单击"Project Organizer &gt; TOCs"。</p>
+</li>
+<li>
+<p>双击打开要修改的TOC文件。</p>
+</li>
+<li>
+<p>选中要移动的小节，拖动到适当的位置。</p>
+</li>
+</ol>
+<h2 id="_53">预览发布内容</h2>
+<h5 id="_54">使用场景</h5>
+<p>文件修订完成后，预览文件输出效果。</p>
+<h5 id="_55">步骤</h5>
+<ol>
+<li>
+<p>单击"Project &gt; View Primary"。</p>
+</li>
+<li>
+<p>(可选) 如果想要预览其他文件的输出效果，点击"View
+    Primary"右下角的三角，选择要预览的文件。</p>
+</li>
+</ol>
+<h2 id="logo">删除公司logo</h2>
+<h5 id="_56">使用场景</h5>
+<p>有些项目需要删除文档里的公司logo。</p>
+<h5 id="_57">步骤</h5>
+<ol>
+<li>
+<p>单击"Project Organizer &gt; Skins"。</p>
+</li>
+<li>
+<p>双击打开"HTML5 - Tripane"。</p>
+</li>
+<li>
+<p>选择"Styles &gt; Logo &gt; Background"。</p>
+</li>
+<li>
+<p>在"Image"的下拉菜单中，选择"none"。</p>
+</li>
+</ol>
+<p><img alt="企业微信截图_16791329288865" src="../media/7.7-1.png" />{width="6.845833333333333in"
+height="3.7381944444444444in"}</p>
+<ol>
+<li>单击<img alt="企业微信截图_16791091788848" src="../media/4.2-5.png" />{width="0.26180555555555557in"
+    height="0.22291666666666668in"}，保存更改。</li>
+</ol>
+<h2 id="_58">保存</h2>
+<ul>
+<li>
+<p>单击<img alt="企业微信截图_16791091465157" src="../media/7.8-1.png" />{width="0.26944444444444443in"
+  height="0.22291666666666668in"}保存当前页面的修改内容</p>
+</li>
+<li>
+<p>单击<img alt="企业微信截图_16791091788848" src="../media/4.2-5.png" />{width="0.26180555555555557in"
+  height="0.22291666666666668in"}保存所有页面的修改内容</p>
+</li>
+</ul>
+<p><img alt="企业微信截图_16791090941365" src="../media/7.8-2.png" />{width="5.761805555555555in"
+height="3.1458333333333335in"}</p>
+<h2 id="_59">发布文件</h2>
+<h5 id="_60">使用场景</h5>
+<p>文件修订完成后，按需求输出交付文件。</p>
+<h5 id="_61">步骤</h5>
+<ol>
+<li>
+<p>点击"Project Organizer"。</p>
+</li>
+<li>
+<p>把发布文件设置为Primary Target。参考<a href="#设置primary-target">7.1</a>
+    <a href="#设置primary-target">设置Primary Target</a>。</p>
+</li>
+<li>
+<p>把发布内容的TOC设置为Master TOC。参考<a href="#设置master-toc">7.3</a>
+    <a href="#设置master-toc">设置Master TOC</a>。</p>
+</li>
+<li>
+<p>单击"Project &gt; Publish Primary"。</p>
+</li>
+<li>
+<p>在"MadCap Flare 2017"对话框中，选择"是"。</p>
+</li>
+<li>
+<p>（可选）双击发布状态栏的任一位置可打开文件。</p>
+</li>
+</ol>
+<p><img alt="发布状态栏" src="../media/7.9-1.png" />{alt="企业微信截图_16791271212946"
+width="5.761805555555555in" height="3.1458333333333335in"}</p>
+<hr />
+<p><img alt="" src="../media/3.0-2.wmf" />{width="0.6305555555555555in"
+  height="0.23819444444444443in"}</p>
+<hr />
+<p>"Status"为"Finished"则输出成功。"Compile Status"里的"Publish
+  failed:..."不用理会。</p>
+<hr />
+<h1 id="_62">常见问题</h1>
+<p>+------------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| 现象                         | 原因                                                         | 解决方法                                                                                                                       |
++==============================+==============================================================+================================================================================================================================+
+| []{#内容无法编辑             | 要编辑的内容实际属于另一个Topic（一般在"Snippet"文件夹下）。 | 1.  点击无法编辑内容左边的"MadCap:snippetBlock"，选中该段内容.                                                                 |
+| .anchor}Topic的内容无法编辑  |                                                              |                                                                                                                                |
+|                              |                                                              | <img alt="企业微信截图_16799807241809" src="../media/8.0-1.png" />{width="4.061805555555556in" height="2.0in"}                                |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | 2.  切换到"XML Editor"页面。参考<a href="#text-editor">2.5</a>                                                                            |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | 3.                                                                                                                             |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | <a href="#text-editor">Text EditorText                                                                                                               |
+|                              |                                                              | Editor显示该页面的具体内容，如文字、图片、表格。<img alt="企业微信截图_16795706882731" src="../media/2.5-1.png" />{width="6.845833333333333in" |
+|                              |                                                              | height="3.7381944444444444in"}</a>                                                                                  |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | 4.  <a href="#text-editor">XML Editor</a>。                                                                                               |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | 5.  查看该段内容实际所属Topic的路径。                                                                                          |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | <img alt="企业微信截图_16800032689904" src="../media/8.0-2.png" />{width="4.061805555555556in" height="2.0381944444444446in"}                 |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | 6.  按路径找到并打开正确的Topic。                                                                                              |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | 7.  修改内容。                                                                                                                 |
++------------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| 图片变形                     | 图片被压缩                                                   | 1.  选中图片。                                                                                                                 |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | <!-- -->                                                                                                                       |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | 8.  右键选择"Reset Size"。                                                                                                     |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | 9.  重新调整图片大小。参考<a href="#更改图片大小">5.4</a> <a href="#更改图片大小">更改图片大小</a>。                                                 |
++------------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| 操作指南中出现联机帮助的内容 | 内容的Condition设置不正确                                    | 重新设置内容的Condition。参考<a href="#设置发布格式">4.5</a> <a href="#设置发布格式">设置发布格式</a>。                                              |
++------------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| 导出失败                     | 导出文件夹的路径太复杂                                       | 更改文件的发布位置，比如发布到桌面。                                                                                           |
+|                              +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+|                              | 文件代码有误                                                 | 1.  根据错误提示定位并打开错误页面。                                                                                           |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | <!-- -->                                                                                                                       |
+|                              |                                                              |                                                                                                                                |
+|                              |                                                              | 10. 对照中文Flare文件修改代码，或把中文页面复制过来，把中文修改为英文。                                                        |
++------------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+</p>
+<h1 id="xml">常用格式的 XML 代码</h1>
+<hr />
+<p>格式         代码</p>
+<hr />
+<p>一级ul       \&lt;ul class=\"ul1\"&gt;\&lt;span style=\"font-family:
+               \'Wingdings\'\"&gt;l \&lt;/span&gt;content content content\&lt;/ul&gt;</p>
+<p>二级ul       \&lt;ul class=\"ul2\" style=\"margin-left: 1.0ch;\"&gt;\&lt;span
+               style=\"font-family: \'Wingdings 3\'\"&gt; \&lt;/span&gt;content
+               content content\&lt;/ul&gt;</p>
+<hr />
+<h1 id="_63">相关资料</h1>
+<hr />
+<p>相关资料                 SVN地址</p>
+<hr />
+<p>Flare入门.pptx           http://192.168.240.194/ptyf/PK_RES_DB/1.
+                           资料开发/3.平台工作/5.培训及分享/Flare-面向翻译/Flare入门.pptx</p>
+<p>Flare使用总结.docx       http://192.168.240.194/ptyf/PK_RES_DB/1.
+                           资料开发/3.平台工作/5.培训及分享/Flare/Flare使用总结.docx</p>
+<p>Flare基本操作介绍.pptx   http://192.168.240.194/ptyf/PK_RES_DB/1.
+                           资料开发/3.平台工作/5.培训及分享/Flare/Flare基本操作介绍.pptx</p>
+<hr /></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
