@@ -18,9 +18,8 @@ nav:
     - MkDocs FAQ: notes/mkdocs-faq.md
 
 
-theme: 
-  name: null
-  custom_dir: 'cinder'
+theme: mkdocs
+
 
 extra_css:
   - styles/custom.css
@@ -39,4 +38,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - def_list
+  - def_list  
+
+Extra:
+  analytics:
+    provider: google
+    property: G-4TV7P06J8L

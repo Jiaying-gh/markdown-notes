@@ -9,8 +9,8 @@
 
 **2021.12 – Present｜ Hytera ｜Technical Translation Engineer**
 
-- Independently managed full-cycle documentation translation and development (CN/EN) for three software product lines using MadCap Flare and Word, delivering user manuals, online help, API documentation, release notes, and other documentation types.
-- Collaborated closely with R&D and QA teams to understand product functionality; designed document information architecture to improve user-friendliness, content consistency, and readability across product documentation.
+- Develop and translate software documentation using MadCap Flare and Word, delivering user manuals, online help, API descriptions, and release notes.
+- Collaborate closely with R&D and QA teams to understand product features; designed document information architecture to improve user-friendliness, content consistency, and readability across product documentation.
 - Led software UI internationalization efforts, delivering 50,000+ English UI strings; proposed interaction improvements from a user perspective to enhance product internationalization and overall usability.
 - Contributed to refining team writing standards, regularly organized knowledge-sharing sessions, and helped institutionalize personal expertise into team processes.
 

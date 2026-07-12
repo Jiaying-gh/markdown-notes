@@ -1,182 +1,361 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>简历 - Markdown_作品集</title>
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
-        <link href="../styles/custom.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <script>
-        // Current page data
-        var mkdocs_page_name = "\u7b80\u5386";
-        var mkdocs_page_input_path = "resume.md";
-        var mkdocs_page_url = null;
-      </script>
     
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    
+    <title>中文简历 - Markdown_作品集</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+    <link href="../styles/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="../js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body>
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Markdown_作品集
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">简历</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#_2">工具技能</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_3">工作经历</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_4">项目经历</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_5">教育背景</a>
-    </li>
-    </ul>
-                </li>
-              </ul>
-              <p class="caption"><span class="caption-text">学习笔记</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../notes/markdown-syntax-basic/">Markdown 基础语法</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../notes/markdown-syntax-extended/">Markdown 扩展语法</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../mkdocs-faq/">MkDocs FAQ</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">作品集</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../portfolio/">作品集概览</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../portfolio/API-documentation/">API文档</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../portfolio/how-to-guide/">用户手册</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../portfolio/release-notes/">版本指南</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../portfolio/tutorial/">用户教程</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../portfolio/madcap-flare-operation-guide/">工具文档</a>
-                  </li>
-              </ul>
-      </div>
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">Markdown_作品集</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">介绍</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">作品集 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../portfolio/">作品集概览</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../portfolio/API-documentation/">API文档</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../portfolio/how-to-guide/">用户手册</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../portfolio/release-notes/">版本指南</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../portfolio/tutorial/">用户教程</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../portfolio/madcap-flare-operation-guide/">工具文档</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">简历 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">中文简历</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../resume-en/">English</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">学习笔记 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../notes/markdown-syntax-basic/">Markdown 基础语法</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../notes/markdown-syntax-extended/">Markdown 扩展语法</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../notes/mkdocs-faq/">MkDocs FAQ</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../portfolio/madcap-flare-operation-guide/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../resume-en/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
     </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Markdown_作品集</a>
-        
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">简历</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-                <h1 id="_1">李佳盈</h1>
-<p><strong>求职意向：技术文档工程师 / 技术资料开发工程师</strong></p>
-<p>📞 15086806890（微信同号）｜📧 sisuzanel@163.com</p>
-<hr />
-<h2 id="_2">工具技能</h2>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#_1">李佳盈</a></li>
+            <li class="second-level"><a href="#_2">工作经历</a></li>
+                
+            <li class="second-level"><a href="#_3">项目经历</a></li>
+                
+            <li class="second-level"><a href="#_4">工具技能</a></li>
+                
+            <li class="second-level"><a href="#_5">教育背景</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="_1">李佳盈</h1>
+<p><strong>求职意向：技术文档工程师</strong>
+<strong>电话：13691796595</strong>
+<strong>邮箱：sisuzanel@163.com</strong></p>
+<h2 id="_2">工作经历</h2>
+<p>**2021.12 - 至今 ｜ 某上市通信公司 ｜ 科技翻译工程师 ｜ **</p>
 <ul>
-<li><strong>文档开发</strong>：MadCap Flare、Oxygen XML Editor（DITA）、Microsoft Word、福昕编辑器</li>
-<li><strong>绘图制图</strong>：Visio、PowerPoint、中望 CAD</li>
-<li><strong>其他</strong>：Figma（界面设计）、剪映（视频剪辑）</li>
+<li>使用 MadCap Flare、Word 工具，独立负责 3 条软件产品线的全周期文档翻译与开发（中英文），交付用户手册、联机帮助、API 文档、版本指南等多种资料类型。</li>
+<li>与研发、测试团队沟通，熟悉产品功能，设计文档信息架构，提高文档的用户友好度，提升资料与产品一致性与可读性。</li>
+<li>负责软件产品界面的国际化工作，累计交付 50,000+ 英文 UI 词条；从用户角度出发，提出交互优化建议，帮助提高产品国际化水平及用户友好度。</li>
+<li>参与优化团队写作规范，并定期组织经验分享，将个人经验沉淀为团队流程。</li>
+</ul>
+<p>**2018.07 - 2020.07 ｜ 深圳新东方培训学校 ｜ 英语教师 ｜ **</p>
+<ul>
+<li>作为小组负责人，管理初一教研组（7 人）的教研管理工作，负责编审课件与搭建教学资料体系。</li>
+<li>完成教学及家长沟通工作，续费率为英语组（23 人）前三。</li>
 </ul>
 <hr />
-<h2 id="_3">工作经历</h2>
-<p><strong>2021.12 - 至今｜某上市通信公司｜技术文档工程师（兼文档本地化）｜硕士在职</strong></p>
+<h2 id="_3">项目经历</h2>
+<p><strong>2026.03 - 至今 ｜ 个人技术写作作品集站点</strong></p>
 <ul>
-<li>独立负责通信硬件及配套软件产品的全周期文档开发，涵盖用户手册、联机帮助（WebHelp）、硬件安装指南、参数参考指南、版本指南、API 文档等多种资料类型；主动优化中文文档结构与信息架构，提升内容一致性与可读性。</li>
-<li>使用 MadCap Flare 独立搭建并维护结构化文档项目（100+ Topic），综合运用 condition、snippet 实现内容复用，交付 H5、WebHelp、PDF、Word 等多种输出格式，覆盖完整文档生命周期管理。</li>
-<li>与研发、测试团队紧密协作，深入理解产品特性与技术实现，独立完成内容撰写与技术评审；参与制定并持续优化团队文档规范与写作流程，定期组织经验分享培训。</li>
-<li>负责产品界面英文本地化工作，累计交付 50,000+ 英文 UI 词条，协助推进产品国际化进程；具备中英双语技术写作能力，可独立完成中英文文档的撰写与互译。</li>
-<li>撰写产品功能双语宣传视频脚本，独立完成视频拍摄与剪辑，累计交付 10+ 条视频内容。</li>
+<li>使用 MkDocs 搭建个人作品集站点（https://jiaying-gh.github.io/markdown-notes/）。</li>
+<li>基于 Docs-as-Code 理念，通过 VS Code 编写了 12+ Markdown 文件，展示用户手册、API 文档等多类型技术文档。</li>
+<li>集成并定制第三方 Cinder 主题，并使用 Admonition 拓展区分提示内容与正文。</li>
+<li>使用 Git 管理文档版本，通过 GitHub Pages 实现自动化部署。</li>
+<li>引入 Google Analytics，监控用户对站点的使用情况。</li>
 </ul>
-<p><strong>2018.07 - 2020.07｜深圳新东方培训学校｜英语教师</strong></p>
+<p><strong>2025.10 - 2025.12 ｜ 通信软件解决方案英文文档</strong></p>
 <ul>
-<li>主导初一教研组（7人）的教研管理工作，负责课件编审与教学资料体系搭建，所制作课件体系沿用至今。</li>
+<li>使用 MadCap Flare 工具，更新超 100 个话题，交付 H5、WebHelp、PDF 多种格式。运用 condition、snippet 实现同源管理及复用，降低维护成本。项目共涉及 30 本文档，总字数达 20 万字。</li>
 </ul>
 <hr />
-<h2 id="_4">项目经历</h2>
-<p><strong>通信产品配套资料开发项目（MadCap Flare）｜主要负责人</strong></p>
-<p>独立承担某通信硬件及软件产品线的完整文档建设工作。从零搭建 MadCap Flare 文档项目，规划 Topic 结构与内容架构（100+ Topic）；运用 condition 标签实现多产品内容差异化管理，利用 snippet 完成跨文档内容复用，有效降低维护成本；按需交付 H5、WebHelp、PDF、Word 多种格式，文档类型涵盖操作文档、产品概述、硬件安装指南、参数参考指南等，独立支撑产品研发全周期的文档需求。</p>
+<h2 id="_4">工具技能</h2>
+<ul>
+<li><strong>文档开发</strong>：Madcap Flare、Markdown、MkDocs、Oxygen XML Editor (DITA)</li>
+<li><strong>图片处理</strong>：Visio、PowerPoint、中望 CAD、Figma</li>
+<li><strong>版本管理</strong>：Git、Tortoise SVN</li>
+<li><strong>语言</strong>：专八，可独立完成中英技术文档的撰写与互译</li>
+</ul>
 <hr />
 <h2 id="_5">教育背景</h2>
-<p><strong>2020.09 - 2021.11｜香港中文大学｜翻译｜硕士</strong>
-主要课程：翻译工作坊、英汉互译、高级翻译研究</p>
-<p><strong>2014.09 - 2018.06｜四川外国语大学｜翻译｜本科</strong>
-连续三年获校级奖学金（前 15%），GPA：4.1</p>
-              
-            </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../notes/markdown-syntax-basic/" class="btn btn-neutral float-right" title="Markdown 基础语法">Next <span class="icon icon-circle-arrow-right"></span></a>
+<p><strong>2020.09 - 2021.11 ｜ 香港中文大学 ｜ 翻译 ｜ 硕士</strong></p>
+<ul>
+<li>主要课程：翻译工作坊、英汉互译、高级翻译研究</li>
+</ul>
+<p><strong>2014.09 - 2018.06 ｜ 四川外国语大学 ｜ 翻译 ｜ 本科</strong></p>
+<ul>
+<li>连续三年获得校奖学金（前 15%），GPA：4.1</li>
+</ul></div>
+        
+        
     </div>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
+    
+      <footer class="col-md-12 text-center">
           
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
         </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-    
-      <span><a href="../notes/markdown-syntax-basic/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
+    </body>
 
-</body>
 </html>
